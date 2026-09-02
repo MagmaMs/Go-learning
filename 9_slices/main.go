@@ -52,7 +52,7 @@ func main() {
 	//Prints [1] 1 1
 
 	//Using index
-	nums[0] = 3 //Might give error if index is more than the length entered in make
+	num[0] = 3 //Might give error if index is more than the length entered in make
 	//Prints [3 0] if length is 2, first we entered and second is zero by default
 
 	//-----Copy Function------
@@ -78,6 +78,6 @@ func main() {
 	fmt.Println(slices.Equal(abc, def)) //returns true
 
 	//---2D Slices---
-	var twoD = [][]int{{1,2}, {3,4}} //prints [[1 2] [3 4]]
+	var twoD = [][]int{{1, 2}, {3, 4}} //prints [[1 2] [3 4]]
 	fmt.Println(twoD)
 }
