@@ -79,4 +79,5 @@ func main() {
 
 	//---2D Slices---
 	var twoD = [][]int{{1,2}, {3,4}} //prints [[1 2] [3 4]]
+	fmt.Println(twoD)
 }
