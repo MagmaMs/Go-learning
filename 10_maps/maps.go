@@ -1,10 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"maps"
+)
 
 //Maps aka hash, objects, dictionary, etc
 
-func main(){
+func main() {
 	//---Creating Map---
 	m1 := make(map[string]string) //First "string" is datatype of key and second is of value
 
@@ -27,7 +30,7 @@ func main(){
 	clear(m1)
 
 	//---Another way of Initialisation
-	m2 := map[int]string{1:"one", 2:"two"}
+	m2 := map[int]string{1: "one", 2: "two"}
 	fmt.Println(m2)
 
 	//
@@ -38,4 +41,9 @@ func main(){
 	} else {
 		fmt.Println("not okay")
 	}
+
+	m4 := map[string]int{"price": 40}
+	m5 := map[string]int{"price": 40}
+
+	fmt.Println(maps.Equal(m4, m5)) //prints true
 }
